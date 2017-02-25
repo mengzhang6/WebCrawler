@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+
+	<package name="default" namespace="/" extends="struts-default">
+		<default-action-ref name="index"></default-action-ref>
+		<action name="index">
+			<result>/err.jsp</result>
+		</action>
+	</package>
+
+	<package name="crawler" namespace="/crawler" extends="default">
+		<action name="*_*" class="crawler.action.{1}Action" method="{2}">
+			<result name="questions">/pages/questions.jsp</result>
+			<result name="answers">/pages/answers.jsp</result>
+			<result name="index">/pages/index.jsp</result>
+		</action>
+	</package>
+<!-- /crawler/Question_getQuestionsByKey.action?index=1 -->
+<!-- Question_getQuestionsByKey -->
+<!-- crawler.action.QuestionAction  getQuestionsByKey-->
+</struts>

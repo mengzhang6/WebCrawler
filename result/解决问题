@@ -1,0 +1,16 @@
+
+1.乱码问题
+http://jingyan.baidu.com/article/cbf0e500d2c9712eaa2893f7.html
+
+在tomcat中添加编码描述
+如server.xml所示
+
+
+2.数据库问题
+
+use mysql
+新增用户
+grant all on *.* to admin@'%' identified by 'admin' with grant option;
+刷新权限
+flush privileges;
+

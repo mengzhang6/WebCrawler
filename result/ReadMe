@@ -1,0 +1,9 @@
+此版本有如下改进
+1.
+2.
+3.
+
+SELECT * FROM get_question WHERE topic_id in (SELECT LINK_ID FROM topic WHERE `NAME` LIKE '%日本%')
+
+
+SELECT link_id,question_name FROM get_question WHERE question_name LIKE '%中国%' ORDER BY link_id
