@@ -57,3 +57,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/.mymetadata
+/.project
+/.externalToolBuilders
+/.settings
+/.classpath
+/.gitattributes
